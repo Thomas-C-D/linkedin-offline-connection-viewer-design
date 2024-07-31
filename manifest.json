@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Linkedin Offline Connection Viewer - Rodex.app",
+  "version": "1.0",
+  "description": "A CRM extension to manage LinkedIn connections without internet access.",
+  "icons": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "script-src": "'self'",
+    "object-src": "'self'"
+  }
+}

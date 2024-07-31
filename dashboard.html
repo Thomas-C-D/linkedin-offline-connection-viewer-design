@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Connections Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Connections Dashboard</h1>
+    <p>First <a href="https://www.linkedin.com/mypreferences/d/download-my-data" target="_blank">Export your connections from LinkedIn</a>. This will take LinkedIn over an hour to get your download ready. </br> Then, open the CSV and delete the first few useless rows LinkedIn adds and save it ...</p>
+    <h3>Import Connections.csv from Linkedin data export</h3>
+    <input type="file" id="fileInput" class="form-control mb-2">
+    <button id="addPersonBtn" class="btn">Add Person</button>
+    <div id="cardsContainer" class="cards-container"></div>
+  </div>
+
+  <!-- Modal for adding/editing person -->
+  <div class="modal" id="personModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Person Details</h2>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName">
+      </div>
+      <div class="form-group">
+        <label for="profileUrl">Profile URL</label>
+        <input type="url" id="profileUrl">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company">
+      </div>
+      <div class="form-group">
+        <label for="position">Position</label>
+        <input type="text" id="position">
+      </div>
+      <div class="form-group">
+        <label for="connectedDate">Date Connected On</label>
+        <input type="date" id="connectedDate">
+      </div>
+      <button id="savePersonBtn" class="btn">Save</button>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
