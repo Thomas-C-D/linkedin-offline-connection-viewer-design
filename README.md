@@ -20,3 +20,6 @@ No not use any external libraries.
 
 Prompt user's to go to this URL to export their connections.
 https://www.linkedin.com/mypreferences/d/download-my-data
+
+
+## Changed
