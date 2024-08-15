@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return card;
   }
 
+
   // Open modal
   function openModal(person = {}, index = null) {
     currentEditIndex = index;
