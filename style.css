@@ -1,10 +1,5 @@
-
-
-
-
 body {
   background: #292929;
-  
 }
 
 .container {
@@ -40,7 +35,28 @@ body {
 
 input[type="file"] {
   display: none;
+}
 
+.fileInputBtn {
+  background: white;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13.3333px;
+  padding: 10px 20px;
+}
+
+#addPersonBtn {
+  background: #292929;
+  
+}
+
+#footer {
+  width: 100%;
+  height: 120px;
+  background: #9D8AFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .fileInputBtn {
