@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <button class="delete-btn" data-index="${index}">Delete</button>
       </div>
     `;
+    console.log(card.innerHTML)
 
     card.querySelector('.edit-btn').addEventListener('click', () => {
       openModal(person, index);
