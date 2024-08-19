@@ -47,7 +47,7 @@ input[type="file"] {
 
 #addPersonBtn {
   background: #292929;
-  
+
 }
 
 #footer {
@@ -69,7 +69,7 @@ input[type="file"] {
 
 #addPersonBtn {
   background: #292929;
-  
+
 }
 
 #footer {
@@ -86,7 +86,7 @@ input[type="file"] {
   bottom: 0;
 }
 .popup {
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
 }
