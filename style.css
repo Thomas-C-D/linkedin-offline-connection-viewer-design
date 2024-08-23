@@ -91,6 +91,10 @@ input[type="file"] {
   flex-direction: column;
 }
 
+.popup h1 {
+  font-size: 35px;
+}
+
 .form-control {
   margin-bottom: 10px;
 }
@@ -99,6 +103,7 @@ input[type="file"] {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-top: 180px;
 }
 
 .card {
@@ -114,6 +119,14 @@ input[type="file"] {
 
 .card a {
   color: #4bc69b;
+}
+
+.card a:visited {
+  color: #62cad7;
+}
+
+.card, .card a {
+  font-size: 0.7vw;
 }
 
 .card .edit-btn, .card .delete-btn {
@@ -186,6 +199,13 @@ input[type="file"] {
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+button:hover, .fileInputBtn:hover {
+  background: #9d8aff !important;
+  color: white !important;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  box-shadow: 5px 5px black;
 }
+
+
