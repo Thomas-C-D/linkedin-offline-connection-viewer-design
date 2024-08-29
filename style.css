@@ -1,11 +1,90 @@
-.container {
-  padding: 20px;
+body {
+  background: #292929;
 }
 
+.container {
+  padding: 20px;
+  background: #D9D9D9;
+  width: 50%;
+  height: 400px;
+  box-shadow: 15px 15px black;
+  margin: 40px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container h3 {
+  font-size: 25px;
+}
+
+.container h1, .container h3 {
+  font-family: "Akata", sans-serif;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container p, .container label, .container button {
+  font-family: "Biryani", sans-serif;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.fileInputBtn {
+  background: white;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13.3333px;
+  padding: 10px 20px;
+}
+
+#addPersonBtn {
+  background: #292929;
+
+}
+
+
+.fileInputBtn {
+  background: white;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13.3333px;
+  padding: 10px 20px;
+}
+
+#addPersonBtn {
+  background: #292929;
+
+}
+
+#footer {
+  width: 100%;
+  height: 120px;
+  background: #9D8AFF;
+  position: absolute;
+  left: 0;
+  bottom: none;
+}
+
+.cards-container:empty ~ #footer {
+  position: fixed;
+  bottom: 0;
+}
 .popup {
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
+}
+
+.popup h1 {
+  font-size: 35px;
 }
 
 .form-control {
@@ -15,14 +94,51 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 180px;
 }
 
 .card {
-  border: 1px solid #ccc;
+  border: 2px solid white;
   padding: 10px;
   margin: 10px;
   width: calc(33.333% - 20px);
   box-sizing: border-box;
+  background: #292929;
+  color: white;
+  box-shadow: 10px 10px black;
+}
+
+.card a {
+  color: #4bc69b;
+ 
+  
+}
+.card p:has(a) {
+  
+  word-wrap: break-word;
+  
+}
+.card a:visited {
+  color: #62cad7;
+}
+
+.card, .card a {
+  font-size: 0.7vw;
+}
+
+.card .edit-btn, .card .delete-btn {
+  border: none;
+  background: white;
+  display: inline-block;
+  font-size: 13.333px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.card .delete-btn {
+  color: #9d8aff;
+  background: black;
 }
 
 .card h5 {
@@ -81,6 +197,11 @@
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+button:hover, .fileInputBtn:hover {
+  background: #9d8aff !important;
+  color: white !important;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  box-shadow: 5px 5px black;
 }
