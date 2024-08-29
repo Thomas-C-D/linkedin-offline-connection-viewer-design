@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Linkedin Offline Connection Viewer",
-  "version": "1.3",
+  "version": "1.4",
   "description": "A CRM extension to manage LinkedIn connections without internet access.",
   "icons": {
       "16": "icon16.png",
