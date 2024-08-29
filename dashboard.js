@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (const line of lines) {
       const [firstName, lastName, profileUrl, email, company, position, connectedDate] = line.split(',');
-      if (firstName && lastName && profileUrl && email && company && position && connectedDate) {
+      if (firstName && lastName && profileUrl && company && position && connectedDate) {
         result.push({ firstName, lastName, profileUrl, email, company, position, connectedDate });
       }
     }
