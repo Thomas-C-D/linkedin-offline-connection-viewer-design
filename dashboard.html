@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Biryani:wght@200;300;400;600;700;800;900&family=Quicksand&display=swap" rel="stylesheet">
   <title>Connections Dashboard</title>
 </head>
 <body>
@@ -11,11 +17,19 @@
     <h1>Connections Dashboard</h1>
     <p>First <a href="https://www.linkedin.com/mypreferences/d/download-my-data" target="_blank">Export your connections from LinkedIn</a>. This will take LinkedIn over an hour to get your download ready. </br> Then, open the CSV and delete the first few useless rows LinkedIn adds and save it ...</p>
     <h3>Import Connections.csv from Linkedin data export</h3>
+    <div id="buttons-container">
+    <label for="fileInput" class="fileInputBtn">
     <input type="file" id="fileInput" class="form-control mb-2">
+    Add File
+    </label>
     <button id="addPersonBtn" class="btn">Add Person</button>
+  </div>
     <div id="cardsContainer" class="cards-container"></div>
   </div>
 
+</div>
+<div id="cardsContainer" class="cards-container"></div>
+<div id="footer"></div>
   <!-- Modal for adding/editing person -->
   <div class="modal" id="personModal">
     <div class="modal-content">
@@ -52,7 +66,7 @@
       <button id="savePersonBtn" class="btn">Save</button>
     </div>
   </div>
-
+  <div id="footer"></div>
   <script src="dashboard.js"></script>
 </body>
 </html>

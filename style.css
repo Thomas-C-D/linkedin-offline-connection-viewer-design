@@ -50,6 +50,14 @@ input[type="file"] {
 
 }
 
+#footer {
+  width: 100%;
+  height: 40px;
+  background: #9D8AFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
 
 .fileInputBtn {
   background: white;
@@ -110,15 +118,13 @@ input[type="file"] {
 }
 
 .card a {
-  color: #4bc69b;
- 
-  
+  color: #4bc69b;  
 }
+
 .card p:has(a) {
-  
   word-wrap: break-word;
-  
 }
+
 .card a:visited {
   color: #62cad7;
 }
